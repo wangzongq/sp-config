@@ -1,12 +1,12 @@
-#eureka.instance.lease-renewal-interval-in-second 
-#心跳间隔时间，默认 30秒 
-#defaultZone，默认位置,可以修改为具体地理位置，比如： beiJing, shangHai, shenZhen 等，表示 eureka 服务器的部署位置
-#eureka.client.registry-fetch-interval-seconds
-#拉取注册信息间隔时间,默认30秒
+
 spring:
   application:
     name: order-service
-    
+  rabbitmq:
+    host: 192.168.131.128
+    port: 5672
+    username: admin
+    password: admin  
 # server:
 #  port: 8201
   
